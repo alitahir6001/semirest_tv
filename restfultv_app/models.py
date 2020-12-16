@@ -12,10 +12,10 @@ class show_manager(models.Manager):
         if len(postData['network']) < 3:
             errors['network'] = "Network length is too short!"
 
-        if len(postData['release_date']) == 0:
-            errors['release_date'] = "release_date length is too short!"
+        if len(postData['releasedate']) == 0:
+            errors['releasedate'] = "release date length is too short!"
 
-        if len(postData)['description'] == 0:
+        if len(postData['description']) == 0:
             errors['description'] = "There is no description listed!"
         
         return errors
